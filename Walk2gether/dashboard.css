@@ -1,0 +1,25 @@
+.h-a{
+	height: 75vh;
+}
+
+.navigation ul li:hover {
+  background: #2b3787;
+	background-color: #007791;
+}
+
+.navbar ul li {
+	height: 50px;
+}
+
+.navbar ul li a {
+	height: 50px;
+	line-height: 50px;
+}
+
+.toggle{
+	height: 50px;
+}
+
+.toggle:before {
+	line-height: 50px;
+}

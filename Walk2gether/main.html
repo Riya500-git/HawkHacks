@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <link rel="stylesheet" type="text/css" href="dashboard.css" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="navigation">
+      <ul>
+        <li class="f">
+          <a href="#" class="first">
+            <span class="icon"><img src="" alt="" /></span>
+            <span class="title">SAFECOMPANIO</span>
+          </a>
+        </li>
+        <div class="line"></div>
+        <li id="dash">
+          <a href="#">
+            <span class="icon"
+              ><i class="fa fa-home" aria-hidden="true"></i></span>
+              <span class="title" href="http://127.0.0.1:5500/signup.html">Dashboard</span></a>
+          </a>
+        </li>
+        
+        <li id="crop">
+          <a href="#">
+            <span class="icon"
+              ><i class="fa fa-registered" aria-hidden="true"></i></span>
+            <span class="title">Filters</span>
+          </a>
+        </li>
+        <li id="petition">
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-file" aria-hidden="true"> </i></span>
+              <span class="title">Location Information</span>
+            </a>
+          </li>
+          <li id="status">
+            <a href="#">
+              <span class="icon"
+                ><i class="fa fa-wrench" aria-hidden="true"></i></span>
+              <span class="title">Invite Friends/Groups</span>
+            </a>
+          </li>
+        <li id="reach">
+          <a href="#">
+            <span class="icon"
+              ><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+            <span class="title">Emergency Reach Out</span>
+            
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <div class="toggle" onclick="toggleMenu()"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signup.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="#">Sign out</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav right">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Welcome, Maze!</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="flex mt-12 ml-12 h-screen" id="dashboard">
+      <div class="flex flex-col w-1/3 ml-8 mt-40">
+        <p class="text-5xl font-semibold">SafeCompanio</p>
+        <p class="text-md mt-24">
+            Hate crimes and street violence have exponentially increased and the violence does not end there. Many oppressed groups face physical 
+            and emotional racial hostility in the same way. These crimes harm not only the victims but also people who have a similar identity. 
+            Aside from racial identities, all genders reported feeling more anxious about exploring the outside environment due to higher crime rates. 
+            After witnessing an upsurge in urban violence and fear of the outside world, SafeCompanio was developed, an app that addresses the issue of 
+            feeling unsafe when venturing out alone and fundamentally alters the way we travel. 
+        </p>
+      </div>
+
+      <div class="flex flex-col space-y-4 w-2/3 mx-4 self-center" id="cards">
+        <div id="row1" class="flex space-x-4"></div>
+        <div id="row2" class="flex space-x-4"></div>
+      </div>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
